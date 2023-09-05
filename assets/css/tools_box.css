@@ -1,0 +1,99 @@
+
+.circle-menu{
+    position: fixed;
+    bottom: 5em;
+    right: 4em;
+    
+}
+.active .menu_btn{
+    box-shadow: 0 0 3px rgba(165, 117, 177, 0.3);
+}
+.circle-menu .menu_btn{
+    display: block;
+    width: 3.9em;
+    height: 3.7em;
+    border-radius: 50px;
+    background-color: var(--silebar-color);
+    /* box-shadow: 0px 0px 8px 0px #743939; */
+    cursor: pointer;
+    text-align: center;
+    line-height: 4;
+}
+.circle-menu .menu_btn:hover{
+    background: var(--primary-color);
+}
+.circle-menu .menu_btn:hover i{
+    color: var(--toggle-color);
+}
+.circle-menu .menu_btn:active{
+    box-shadow: -1px 0px 8px 4px var(--text-color);
+}
+.circle-menu .menu_btn i{
+    font-size: 1.4em;
+    transition: transform .2s linear;
+    color: var(--text-color);
+}
+.active .menu_btn{
+    transform: rotate(-90deg);
+}
+.circle-menu::after{
+    content: '';
+    display: block;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    top: 0;
+    bottom: 29em;
+    bottom: 0em;
+    transition: all .3s ease;
+    position: absolute;
+    z-index: -2;
+}
+
+ .active::after{
+    transform: scale3d(5.5,5.5,1);
+    transition: cubic-bezier(.68,1.5,25,1);
+    color: var(--text-color);
+}
+.circle-menu .items_wrapper .menu_item{
+    position: absolute;
+    top: .2em;
+    right: .2em;
+    display: block;
+    width: 3em; 
+    height: 3em;
+    color: var(--silebar-color);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 3;
+    background-color: var(--silebar-color);
+    transition: transform .3s ease,background-color .2s ease;
+    z-index:-1 ;
+    transition: .4s;
+}
+.circle-menu .items_wrapper .menu_item:hover{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+.active .items_wrapper .menu_item:nth-child(1){
+    transform: translate3d(0.2em,-4.4em,1em);
+    color: var(--text-color);
+}
+.active .items_wrapper .menu_item:nth-child(2){
+    transform: translate3d(-3.2em,-2.8em,1em);
+    color: var(--text-color);
+}
+.active .items_wrapper .menu_item:nth-child(3){
+    transform: translate3d(-4.5em,1.2em,0);
+    color: var(--text-color);
+}
+.active .items_wrapper .menu_item:nth-child(4){
+    transform: translate3d(-2.1em,4.4em,0);
+    color: var(--text-color);
+}
+
+.circle-menu .items_wrapper .menu_item:hover i{
+    background-color: var(--primary-color);
+    color: var(--toggle-color);
+}
+

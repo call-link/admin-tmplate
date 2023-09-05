@@ -1,0 +1,218 @@
+
+
+
+
+.dashboard {
+    background: var(--panel-color);
+    height: 100vh;
+    width: calc(100% - 250px);
+    position: relative;
+    left: 250px;
+    padding: 10px 14px;
+    transition: var(--tran-05);
+}
+
+nav.c-panel~.dashboard {
+    width: calc(100% - 77px);
+    left: 77px;
+}
+
+.dashboard .top {
+    display: flex;
+    width: calc(100% - 278px);
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    left: 264px;
+    top: 15px;
+    background: var(--bacdrob-color);
+    backdrop-filter: blur(15px);
+    padding: 13px 18px;
+    transition: var(--tran-05);
+    z-index: 100;
+    border-radius: 13px;
+}
+
+nav.c-panel~.dashboard .top{
+    width: calc(100% - 102px);
+    left: 90px;
+}
+
+
+.dashboard .top .sidebar-toggle {
+    font-size: 26px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.dashboard .top .search-box{
+    position: relative;
+    height: 45px;
+    max-width: 600px;
+    width: 600px;
+    margin: 0 30px;
+}
+
+.dashboard .top .search-box input{
+    position: absolute;
+    border: 2px solid var(--border-color);
+    background: var(--panel-color);
+    border-radius: 6px;
+    padding: 0 25px 0 50px;
+    height: 100%;
+    width: 100%;
+    color: var(--text-color);
+    font-size: 13px;
+    font-weight: 400;
+    outline: none;
+    transition: var(--tran-03);
+}
+
+.dashboard .top .search-box input:focus{
+    box-shadow: var(--shadow);
+}
+
+.dashboard .top .search-box i{
+    position: absolute;
+    left: 15px;
+    font-size: 19px;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--black-light-color);
+    cursor: pointer;
+}
+
+.dashboard .top .search-box i::after{
+    content: '';
+    border-right: 2px solid #747474;
+    margin-left: 6px;
+}
+
+
+.dashboard .top .bt-sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 185px;
+    width: 100%;
+    height: 45px;
+    margin-left: 30px;
+}
+
+.dashboard .top .bt-sec .btn-group:hover{
+    background: var(--color-2-main);
+    color: #EEE!important;
+}
+.dashboard .top .bt-sec .btn-group{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    background: var(--panel3-color);
+    box-shadow: var(--shadow);
+    transition: var(--tran-05);
+}
+
+
+.dashboard .dash-content{
+    padding-top: 50px;
+}
+
+ .dashboard .dash-content .dash-title{
+    display: flex;
+    align-items: center;
+    margin: 70px 0 30px 0;
+}
+
+.dashboard .dash-content .dash-title i{
+    position: relative;
+    height: 35px;
+    width: 35px;
+    background: var(--color-main);
+    border-radius: 6px;
+    color: var(--title-icon-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 23px;
+    font-size: 28px;
+    font-weight: 100;
+ }
+
+ .dashboard .dash-content .dash-title .dash-text{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-left: 10px;
+ }
+
+ .dash-content .boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    transition: var(--tran-03);
+ }
+
+.box{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .25),
+    0 10px 10px rgba(0, 0, 0, .22);
+    transition: var(--tran-05);
+}
+
+.box:hover{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .12),
+    0 3px 6px rgba(0, 0, 0, .18);   
+     transform: translate(0px , -3px);
+}
+
+.box i{
+    font-size: 35px;
+    color: var(--text-color)!important;
+ }
+
+ .dash-content .boxes .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: calc(100% / 4 - 15px);
+    background-color: var(--box1-color);
+    padding: 15px 20px;
+ }
+
+.boxes  .box .text{
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+
+.boxes .box  .number{
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.boxes .box-2{
+    background: var(--box2-color)!important;
+} 
+
+.boxes .box-3{
+    background: var(--box3-color)!important;
+} 
+
+
+
+.boxes .box-4{
+    background: var(--box4-color)!important;
+} 

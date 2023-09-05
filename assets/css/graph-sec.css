@@ -1,0 +1,80 @@
+
+.graph{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.graph .graph-title{
+    align-self: flex-start;
+}
+
+.graph p{
+    background: var(--admin-color);
+    padding: 2px 10px;
+    display: inline-block;
+    border-radius: 10px;
+    color: var(--text5-color);
+}
+
+.graph .graf-board{
+    display: flex;
+    justify-content: space-around;
+}
+
+.graph .graph-content{
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    background: var(--panel2-color);
+    color: var(--text4-color);
+    width: 45%;
+}
+.graph .graph-content-2{
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    background: var(--panel2-color);
+    color: var(--text4-color);
+    width: 45%;
+}
+
+.graph-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.graph-header .icons-sec{
+    display: flex;
+    align-items: center;
+}
+
+.icons{
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background: var(--panel3-color);
+    color: var(--black-light-color);
+    box-shadow: var(--shadow);
+    display: grid;
+    place-items: center;
+    font-size: 1.2rem;
+    margin-right: .8rem;
+    cursor: pointer;
+}
+
+.graph-header select{
+    background: var(--panel3-color);
+    color: var(--black-light-color);
+    box-shadow: var(--shadow);
+    border-radius: 6px;
+    height: 35px;
+    padding: .1rem 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
